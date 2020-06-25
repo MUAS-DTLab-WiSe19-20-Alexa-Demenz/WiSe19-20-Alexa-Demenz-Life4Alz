@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="hm.edu.life4alz.model.appointmenttypes.Appointment" project="TestSkill" 
+    file="/TestSkill/src/main/java/hm/edu/life4alz/model/appointmenttypes/Appointment.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="618" width="366" x="512" y="299"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="hm.edu.life4alz.model.appointmenttypes.DoctorAppointment" project="TestSkill" 
+    file="/TestSkill/src/main/java/hm/edu/life4alz/model/appointmenttypes/DoctorAppointment.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="132" width="428" x="44" y="957"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="hm.edu.life4alz.model.appointmenttypes.AppointmentList" project="TestSkill" 
+    file="/TestSkill/src/main/java/hm/edu/life4alz/model/appointmenttypes/AppointmentList.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="186" width="234" x="512" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="hm.edu.life4alz.model.appointmenttypes.OculistAppointment" project="TestSkill" 
+    file="/TestSkill/src/main/java/hm/edu/life4alz/model/appointmenttypes/OculistAppointment.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="96" width="428" x="44" y="1201"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="5" language="java" name="hm.edu.life4alz.model.appointmenttypes.AppointmentTypes" project="TestSkill" 
+    file="/TestSkill/src/main/java/hm/edu/life4alz/model/appointmenttypes/AppointmentTypes.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="222" width="281" x="117" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="6" language="java" name="hm.edu.life4alz.model.appointmenttypes.Shopping" project="TestSkill" 
+    file="/TestSkill/src/main/java/hm/edu/life4alz/model/appointmenttypes/Shopping.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="96" width="352" x="1027" y="957"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="hm.edu.life4alz.model.appointmenttypes.VisitorAtHome" project="TestSkill" 
+    file="/TestSkill/src/main/java/hm/edu/life4alz/model/appointmenttypes/VisitorAtHome.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="204" width="475" x="512" y="957"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="hm.edu.life4alz.model.appointmenttypes.FamilyDoctorAppointment" 
+    project="TestSkill" 
+    file="/TestSkill/src/main/java/hm/edu/life4alz/model/appointmenttypes/FamilyDoctorAppointment.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="96" width="458" x="512" y="1201"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="9">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="10">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="11">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <association id="12">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="13" name="list"/>      
+      <multiplicity id="14" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="15">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="16">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

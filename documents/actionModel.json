@@ -1,0 +1,251 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "alz four life",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AlzFourLife",
+                    "slots": [
+                        {
+                            "name": "Optionen",
+                            "type": "AMAZON.VideoGame",
+                            "samples": [
+                                "Welche Termine habe ich diese Woche"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "Welche {Optionen} habe ich in der App"
+                    ]
+                },
+                {
+                    "name": "TerminAnlegen",
+                    "slots": [
+                        {
+                            "name": "Datum",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "TerminTyp",
+                            "type": "AMAZON.Genre"
+                        }
+                    ],
+                    "samples": [
+                        "Ich möchte für {Datum} einen Termin anlegen {TerminTyp}"
+                    ]
+                },
+                {
+                    "name": "TerminLoeschen",
+                    "slots": [
+                        {
+                            "name": "TerminTyp",
+                            "type": ""
+                        },
+                        {
+                            "name": "Datum",
+                            "type": ""
+                        }
+                    ],
+                    "samples": [
+                        "Ich möchte meinen {TerminTyp} am {Datum} löschen"
+                    ]
+                },
+                {
+                    "name": "ErinnerungHinzufuegen",
+                    "slots": [
+                        {
+                            "name": "Termin",
+                            "type": ""
+                        },
+                        {
+                            "name": "Erinnerung",
+                            "type": ""
+                        }
+                    ],
+                    "samples": [
+                        "Bitte für {Termin} folgende {Erinnerung} hinzufuegen"
+                    ]
+                },
+                {
+                    "name": "Ubersicht",
+                    "slots": [
+                        {
+                            "name": "Termine",
+                            "type": ""
+                        },
+                        {
+                            "name": "Datum",
+                            "type": ""
+                        }
+                    ],
+                    "samples": [
+                        "Welche {Termine} habe ich diesen {Datum}"
+                    ]
+                },
+                {
+                    "name": "InfoSingle",
+                    "slots": [
+                        {
+                            "name": "Erinnerungen",
+                            "type": "AMAZON.City"
+                        },
+                        {
+                            "name": "Termin",
+                            "type": "AMAZON.Language"
+                        }
+                    ],
+                    "samples": [
+                        "Welche Erinnerungen habe ich für {Termin}"
+                    ]
+                },
+                {
+                    "name": "ChangeErinnerung",
+                    "slots": [
+                        {
+                            "name": "Termin",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "Erinnerung",
+                            "type": "AMAZON.City"
+                        }
+                    ],
+                    "samples": [
+                        "Ich möchte für {Termin}  die Erinneurngsliste bearbeiten"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "AlzFourLife",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Optionen",
+                            "type": "AMAZON.VideoGame",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.950923961824.530151632572"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ChangeErinnerung",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1274367862420"
+                    },
+                    "slots": [
+                        {
+                            "name": "Termin",
+                            "type": "AMAZON.DATE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": ""
+                            }
+                        },
+                        {
+                            "name": "Erinnerung",
+                            "type": "AMAZON.City",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "TerminAnlegen",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Datum",
+                            "type": "AMAZON.DATE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": ""
+                            }
+                        },
+                        {
+                            "name": "TerminTyp",
+                            "type": "AMAZON.Genre",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "InfoSingle",
+                    "confirmationRequired": true,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Erinnerungen",
+                            "type": "AMAZON.City",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "Termin",
+                            "type": "AMAZON.Language",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.950923961824.530151632572",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "In dieser unfassbaren geilen App stehen dir folgende Bedienoptionen zur verfügung, Termin anlegen oder verändern, Erinnerungen anlegen oder verändern, Terminübericht"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1274367862420",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Du hast fuer {Termin} die folgenden {Erinnerung} ."
+                    }
+                ]
+            }
+        ]
+    }
+}
